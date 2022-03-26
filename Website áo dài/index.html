@@ -38,12 +38,7 @@
         <div class="header__wrap">
             <div class="header__navbar">
                 <!-- <img src="https://vanhacmong.online/wp-content/uploads/2021/04/header-van-hac-mong.png" class="img" alt=""> -->
-                <div class="header__navbar-cart">
-                    <i class="header__navbar-cart-icon fa-solid fa-cart-plus">
-                        
-                    </i>
-                    <span class="header__navbar-price">0đ</span>
-                </div>
+                <img src="./assets/img/Logo-removebg-preview.png" alt="">
                 <div class="header__navbar-search">
                     <input type="text" class="input" placeholder="Tìm kiếm">
                     <button class="header__navbar-button">
@@ -57,6 +52,12 @@
                     <button href="" class="header__navbar-sign">
                         SIGN UP
                     </button>
+                </div>
+                <div class="header__navbar-cart">
+                    <i class="header__navbar-cart-icon fa-solid fa-cart-plus">
+                        
+                    </i>
+                    <span class="header__navbar-price">0đ</span>
                 </div>
                 
             </div>
@@ -122,48 +123,42 @@
                 </li>
                 <li class="header__category-item">
                     <a href="">ÁO DÀI CÁCH TÂN</a>      
-                    <ul class="subnav">
-                        <li class="subnav__item">
-                            <a href="">ÁO DÀI CỜ ĐỎ SAO VÀNG</a>
-                        </li>
-                        <li class="subnav__item">
-                            <a href="">ÁO DÀI LONG PHƯỢNG</a>
-                        </li>
-                    </ul>            
+                              
                 </li>
                 <li class="header__category-item">
                     <a href="">ÁO DÀI HỌC SINH</a>                  
                 </li>
                 <li class="header__category-item">
-                    <a href="">ÁO BÀ BA</a>
+                    <a href="">SẢN PHẨM</a>
                     <ul class="subnav">
                         <li class="subnav__item">
-                            <a href="">ÁO BÀ BA HOA SEN</a>
+                            <a href="">Áo dài lụa tơ tằm</a>
                         </li>
                         <li class="subnav__item">
-                            <a href="">ÁO BÀ BA IN HOA</a>
+                            <a href="">Áo dài cách tân nam</a>
                         </li>
                         <li class="subnav__item">
-                            <a href="">ÁO BÀ BA TRƠN</a>
+                            <a href="">Áo dài thêu</a>
+                        </li>
+                        <li class="subnav__item">
+                            <a href="">Áo dài gấm</a>
+                        </li><li class="subnav__item">
+                            <a href="">Áo dài nhung</a>
+                        </li><li class="subnav__item">
+                            <a href="">Áo dài học sinh</a>
+                        </li><li class="subnav__item">
+                            <a href="">Áo dài cưới hỏi</a>
+                        </li>
+                        </li><li class="subnav__item">
+                            <a href="">Áo dài đôi</a>
+                        </li>
+                        </li><li class="subnav__item">
+                            <a href="">Áo dài tết</a>
                         </li>
                     </ul>
                 </li>
                 <li class="header__category-item">
                     <a href="">ÁO DÀI</a>
-                    <ul class="subnav">
-                        <li class="subnav__item">
-                            <a href="">ÁO DÀI ĐÔI</a>
-                        </li>
-                        <li class="subnav__item">
-                            <a href="">ÁO DÀI NAM</a>
-                        </li>
-                        <li class="subnav__item">
-                            <a href="">ÁO DÀI NỮ</a>
-                        </li>
-                        <li class="subnav__item">
-                            <a href="">ÁO DÀI TẾT</a>
-                        </li>
-                    </ul>
                 </li>
             </ul>
         </div>
@@ -173,17 +168,113 @@
     <!-- content..................................... -->
     <div class="content">
         <div class="content__image">
-            <img src="./assets/img/10.jpg" alt="">
+            <!-- <img src="./assets/img/10.jpg" alt=""> -->
             <div class="grid wide content__slide">
                 <div class=" content__showslide">
                     <div class="content__image-slide">
-                        <img src="https://khoweb.com.vn/aodai/upload/hinhanh/banner-15323389670.png" class="content__image-img" alt="">
+                        <img onclick="slideChang()" src="./assets/img/Banner2.png" class="content__image-img" alt="">
                                       
                     </div>  
                     <div class="content__image-slide">
-                        <img src="	https://khoweb.com.vn/aodai/images/discount.png" class="content__image-img hide" alt="">                 
+                        <img src="./assets/img/Banner1.png" class="content__image-img hide" alt="">                 
                     </div>                
                 </div>
+
+                <!-- <div class="content__order">
+                    <div class="content__order-row">
+                        <input type="text" placeholder="Mã đơn hàng">
+                        <input type="text" placeholder="Địa chỉ người nhận">
+                        <select name="" id="content__select">
+                            <option value="Chon Khach Hang">Chọn Khách Hàng</option>
+                            <option value="Nguyen Thu Ha">Nguyen Thu Ha</option>
+                            <option value="Tran Dinh Vu">Tran Dinh Vu</option>
+                            <option value="Le The Trung">Le The Trung</option>
+                        </select>
+                    </div>
+                    <div class="content__address">
+                        <select name="" id="content__select">
+                            <option value="Thanh Pho">Thành phố</option>
+                            <option value="HA Tinh">Nha Trang</option>
+                            <option value="Khanh Hoa">Khanh Hoa</option>
+                            <option value="Ninh Binh">Ninh Binh</option>
+                            <option value="Nghe An">Nghe An</option>
+                        </select>
+                        <input type="date" placeholder="Ngày dự kiến giao">
+                        <select name="" id="content__select">
+                            <option value="">Tình trạng</option>
+                            <option value="Chua Xu Li">Chua Xu Li</option>
+                            <option value="Da Xac Nhan">Da Xac Nhan</option>
+                        </select>
+                    </div>
+                    <div class="content__header">
+                        <button>Tìm kiếm</button>
+                        <button>Import Excel</button>
+                        <button>Thêm mới</button>
+                    </div>
+                    <div class="conten__board">
+                        <div class="content__form-board">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Ngày giao hàng</th>
+                                        <th>Số điện thoại</th>
+                                        <th>Tổng số lượng</th>
+                                        <th>Tổng tiền hàng</th>
+                                        <th>Tổng tiền cước</th>
+                                        <th>Tình trạng</th>
+                                        <th>Hoàn thành</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td>0949291126</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>Đã nhận hàng</td>
+                                        <td><input type="checkbox" checked="checked"></td>
+                                        <td><a href="">Xem chi tiết</a></td>
+                                        <td>
+                                            <i class="fa-solid fa-marker"></i>
+                                            <i class="fa-solid fa-circle-xmark"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>0949291126</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>Đã nhận hàng</td>
+                                        <td><input type="checkbox" checked="checked"></td>
+                                        <td><a href="">Xem chi tiết</a></td>
+                                        <td>
+                                            <i class="fa-solid fa-marker"></i>
+                                            <i class="fa-solid fa-circle-xmark"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>0949291126</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>Đã nhận hàng</td>
+                                        <td><input type="checkbox" checked="checked"></td>
+                                        <td><a href="">Xem chi tiết</a></td>
+                                        <td>
+                                            <i class="fa-solid fa-marker"></i>
+                                            <i class="fa-solid fa-circle-xmark"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div> -->
                 <div class="product__price">
                     <h2>GIÁ TỐT HÔM NAY</h2>
                     <!-- <div class="product sm-gutter">
@@ -296,8 +387,8 @@
                                     <div class=" product__price-list">
                                         <h4>50% off</h4>
                                         <img src="https://khoweb.com.vn/aodai/upload/sanpham/cd-0703-1-15442344246_273.33333333333x410.jpg" alt="">
-                                        <h3>Áo dài cách tân7</h3>
-                                        <span>Đã bán: 20%</span>
+                                        <h3>Áo dài lụa đen</h3>
+                                        <span>Đã bán: 56</span>
                                         <div class="price">
                                             <i class="fa-solid fa-heart"></i>
                                             <span>351 000đ</span>
@@ -310,11 +401,11 @@
                                     <div class="product__price-list">
                                         <h4>50% off</h4>
                                         <img src="https://khoweb.com.vn/aodai/upload/sanpham/cd-0706-1-15442342789_273.33333333333x410.jpg" class="product__price-img" alt="">
-                                        <h3>Áo dài cách tân1</h3>
-                                        <span>Đã bán: 20%</span>
+                                        <h3>Áo dài đỏ vẽ tay, cưới hỏi</h3>
+                                        <span>Đã bán: 20</span>
                                         <div class="price">
                                             <i class="fa-solid fa-heart"></i>
-                                            <span>340 000đ</span>
+                                            <span>999 000đ</span>
                                         </div>
                                         <button class="product__btn">Thêm vào giỏ hàng</button>
                                     </div>
@@ -324,11 +415,11 @@
                                     <div class="product__price-list">
                                         <h4>50% off</h4>
                                         <img src="https://khoweb.com.vn/aodai/upload/sanpham/cd-0705-1-15442342963_273.33333333333x410.jpg" alt="">
-                                        <h3>Áo dài cách tân2</h3>
-                                        <span>Đã bán: 20%</span>
+                                        <h3>Áo dài nhung gấm</h3>
+                                        <span>Đã bán: 12</span>
                                         <div class="price">
                                             <i class="fa-solid fa-heart"></i>
-                                            <span>350 000đ</span>
+                                            <span>1 350 000đ</span>
                                         </div>
                                         <button class="product__btn">Thêm vào giỏ hàng</button>
                                     </div>
@@ -338,11 +429,11 @@
                                     <div class="product__price-list">
                                         <h4>50% off</h4>
                                         <img src="https://khoweb.com.vn/aodai/thumb/290x410/2/upload/congtrinh/cd0261-1-15395930821.jpg" alt="">
-                                        <h3>Áo dài cách tân3</h3>
-                                        <span>Đã bán: 20%</span>
+                                        <h3>Áo dài thêu chim phượng</h3>
+                                        <span>Đã bán: 10</span>
                                         <div class="price">
                                             <i class="fa-solid fa-heart"></i>
-                                            <span>360 000đ</span>
+                                            <span>1 000 000đ</span>
                                         </div>
                                         <button class="product__btn">Thêm vào giỏ hàng</button>
                                     </div>
@@ -351,11 +442,11 @@
                                     <div class="product__price-list">
                                         <h4>50% off</h4>
                                         <img src="https://khoweb.com.vn/aodai/upload/sanpham/cd-0704-1-15442344781_266.5x410.jpg" alt="">
-                                        <h3>Áo dài cách tân4</h3>
-                                        <span>Đã bán: 20%</span>
+                                        <h3>Áo dài nam đỏ vẽ tay</h3>
+                                        <span>Đã bán: 59</span>
                                         <div class="price">
                                             <i class="fa-solid fa-heart"></i>
-                                            <span>370 000đ</span>
+                                            <span>880 000đ</span>
                                         </div>
                                         <button class="product__btn">Thêm vào giỏ hàng</button>
                                     </div>
@@ -364,8 +455,22 @@
                                     <div class="product__price-list">
                                         <h4>50% off</h4>
                                         <img src="https://khoweb.com.vn/aodai/upload/sanpham/cd-0704-1-15442344781_266.5x410.jpg" alt="">
-                                        <h3>Áo dài cách tân4</h3>
-                                        <span>Đã bán: 20%</span>
+                                        <h3>Áo dài cam thêu hoa sen</h3>
+                                        <span>Đã bán: 100</span>
+                                        <div class="price">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <span>770 000đ</span>
+                                        </div>
+                                        <button class="product__btn">Thêm vào giỏ hàng</button>
+                                    </div>
+                                </div>
+                                        
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="product__price-list">
+                                        <h4>50% off</h4>
+                                        <img src="https://khoweb.com.vn/aodai/upload/sanpham/cd-0704-1-15442344781_266.5x410.jpg" alt="">
+                                        <h3>Áo dài nhung thêu hoa sen</h3>
+                                        <span>Đã bán: 14</span>
                                         <div class="price">
                                             <i class="fa-solid fa-heart"></i>
                                             <span>370 000đ</span>
@@ -378,11 +483,11 @@
                                     <div class="product__price-list">
                                         <h4>50% off</h4>
                                         <img src="https://khoweb.com.vn/aodai/upload/sanpham/cd-0704-1-15442344781_266.5x410.jpg" alt="">
-                                        <h3>Áo dài cách tân4</h3>
-                                        <span>Đã bán: 20%</span>
+                                        <h3>Áo dài cách tân in họa tiết</h3>
+                                        <span>Đã bán: 26</span>
                                         <div class="price">
                                             <i class="fa-solid fa-heart"></i>
-                                            <span>370 000đ</span>
+                                            <span>170 000đ</span>
                                         </div>
                                         <button class="product__btn">Thêm vào giỏ hàng</button>
                                     </div>
@@ -392,25 +497,11 @@
                                     <div class="product__price-list">
                                         <h4>50% off</h4>
                                         <img src="https://khoweb.com.vn/aodai/upload/sanpham/cd-0704-1-15442344781_266.5x410.jpg" alt="">
-                                        <h3>Áo dài cách tân4</h3>
+                                        <h3>Áo dài trắng với hoa loa kèn</h3>
                                         <span>Đã bán: 20%</span>
                                         <div class="price">
                                             <i class="fa-solid fa-heart"></i>
-                                            <span>370 000đ</span>
-                                        </div>
-                                        <button class="product__btn">Thêm vào giỏ hàng</button>
-                                    </div>
-                                </div>
-                                        
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="product__price-list">
-                                        <h4>50% off</h4>
-                                        <img src="https://khoweb.com.vn/aodai/upload/sanpham/cd-0704-1-15442344781_266.5x410.jpg" alt="">
-                                        <h3>Áo dài cách tân4</h3>
-                                        <span>Đã bán: 20%</span>
-                                        <div class="price">
-                                            <i class="fa-solid fa-heart"></i>
-                                            <span>370 000đ</span>
+                                            <span>670 000đ</span>
                                         </div>
                                         <button class="product__btn">Thêm vào giỏ hàng</button>
                                     </div>
@@ -419,11 +510,11 @@
                                     <div class="product__price-list">
                                         <h4>50% off</h4>
                                         <img src="https://khoweb.com.vn/aodai/upload/sanpham/cd-0704-1-15442344781_266.5x410.jpg" alt="">
-                                        <h3>Áo dài cách tân4</h3>
-                                        <span>Đã bán: 20%</span>
+                                        <h3>Áo dài nhung xanh tím</h3>
+                                        <span>Đã bán: 13</span>
                                         <div class="price">
                                             <i class="fa-solid fa-heart"></i>
-                                            <span>370 000đ</span>
+                                            <span>660 000đ</span>
                                         </div>
                                         <button class="product__btn">Thêm vào giỏ hàng</button>
                                     </div>
@@ -432,11 +523,11 @@
                                     <div class="product__price-list">
                                         <h4>50% off</h4>
                                         <img src="https://khoweb.com.vn/aodai/upload/sanpham/cd-0704-1-15442344781_266.5x410.jpg" alt="">
-                                        <h3>Áo dài cách tân4</h3>
-                                        <span>Đã bán: 20%</span>
+                                        <h3>Áo dài thêu hoa hồng</h3>
+                                        <span>Đã bán: 24</span>
                                         <div class="price">
                                             <i class="fa-solid fa-heart"></i>
-                                            <span>370 000đ</span>
+                                            <span>170 000đ</span>
                                         </div>
                                         <button class="product__btn">Thêm vào giỏ hàng</button>
                                     </div>
@@ -446,11 +537,11 @@
                                     <div class="product__price-list">
                                         <h4>50% off</h4>
                                         <img src="https://khoweb.com.vn/aodai/upload/sanpham/cd-0704-1-15442344781_266.5x410.jpg" alt="">
-                                        <h3>Áo dài cách tân4</h3>
-                                        <span>Đã bán: 20%</span>
+                                        <h3>Áo dài thiết kế in 3D</h3>
+                                        <span>Đã bán: 20</span>
                                         <div class="price">
                                             <i class="fa-solid fa-heart"></i>
-                                            <span>370 000đ</span>
+                                            <span>300 000đ</span>
                                         </div>
                                         <button class="product__btn">Thêm vào giỏ hàng</button>
                                     </div>
@@ -483,10 +574,28 @@
                                         <td><input type="number" value="1" min="1"></td>
                                         <td>Xóa</td>
                                     </tr> -->
+                                    <!-- <tr>
+                                        <td><img src="./assets/img/11.jpg" alt="">Áo dài cách tân</td>
+                                        <td><span>320 000đ</span></td>
+                                        <td><input type="number" value="1" min="1"></td>
+                                        <td>Xóa</td>
+                                    </tr> -->
+                                    <!-- <tr>
+                                        <td><img src="./assets/img/11.jpg" alt="">Áo dài cách tân</td>
+                                        <td><span>320 000đ</span></td>
+                                        <td><input type="number" value="1" min="1"></td>
+                                        <td>Xóa</td>
+                                    </tr> -->
                                 </tbody>
                             </table>
                             <div class="product__cart-price-total">
                                 <p>Tổng tiền:<span>0đ</span></p>
+                            </div>
+                            <div class="order__pay">
+                               
+                                <button class="product__cart-pay">
+                                    <a href="thanhtoan.html">Thanh toán</a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -628,7 +737,7 @@
                                                 <i class="ti-target"></i>
                                             </div>
                                         </div>
-                                        <img src="./assets/img/8.jpg" alt="">
+                                        <img src="https://bizweb.dktcdn.net/thumb/medium/100/289/705…oducts/ao-dai-co-dau-ve-tay-2.jpg?v=1552881460433" alt="">
                                         <h2>Áo tấc cung đình</h2>
                                         <div class="product__hightlight-strong line">
                                             <h2 class="product__hightlight-name">Được bán bởi:</h2>
@@ -653,7 +762,7 @@
                                                 <i class="ti-target"></i>
                                             </div>
                                         </div>
-                                        <img src="./assets/img/9.jpg" alt="">
+                                        <img src="https://bizweb.dktcdn.net/thumb/medium/100/289/705…oducts/ao-dai-co-dau-ve-tay-2.jpg?v=1552881460433" alt="">
                                         <h2>Áo tấc cung đình</h2>
                                         <div class="product__hightlight-strong line">
                                             <h2 class="product__hightlight-name">Được bán bởi:</h2>
@@ -989,7 +1098,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="product__footer-end hide">
+            <div class="product__footer-end hide">
                 <p>ĐĂNG KÍ NHẬN THÔNG TIN</p>
                 <div class="producut__email">
                     <input type="text" placeholder="Email">
@@ -1000,7 +1109,7 @@
                 <img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment3.png" alt="">
                 <img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment4.png" alt="">
                 <img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment5.png" alt="">
-            </div> -->
+            </div>
 
         </div>
     </div>

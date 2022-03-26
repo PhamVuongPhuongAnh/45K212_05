@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./assets/css/main.js"> -->
+    <link rel="stylesheet" href="./assets/css/main.css">  
+    <!-- <link rel="stylesheet" href="./assets/css/jquery.css"> -->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.0.0-web/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <title>Quanlidonhang</title>
+</head>
+<body>
+     <!-- header -->
+     <header>
+        <div class="header__wrap">
+            <div class="header__navbar">
+                <!-- <img src="https://vanhacmong.online/wp-content/uploads/2021/04/header-van-hac-mong.png" class="img" alt=""> -->
+                <img src="./assets/img/Logo-removebg-preview.png" alt="">
+                <div class="header__navbar-search">
+                    <input type="text" class="input" placeholder="Tìm kiếm">
+                    <button class="header__navbar-button">
+                        <i class="header__navbar-button-icon fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="header__navbar-form">
+                    <button href="" class="header__navbar-login">
+                        LOGIN
+                    </button>
+                    <button href="" class="header__navbar-sign">
+                        SIGN UP
+                    </button>
+                </div>
+                <div class="header__navbar-cart">
+                    <i class="header__navbar-cart-icon fa-solid fa-cart-plus">
+                        
+                    </i>
+                    <span class="header__navbar-price">0đ</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- modal .............................................-->
+        <div class="modal__login hide">
+            <div class="modal__inner">
+                <form action="" class="form">
+                    <img src="./assets/img/avata.jpg" alt="">
+                    <div class="modal__container">
+                        <h2>Username</h2>
+                        <input type="text" placeholder="Enter Username" required>
+                        <h2>Password</h2>
+                        <input type="text" placeholder="Enter Password">
+                        <button type="submit">
+                            Login
+                        </button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember">Remember me
+                        </label>
+                        <div class="modal__can">
+                            <a class="modal__can-button">Cancel</a>
+                            <a href="">
+                                Forgot
+                                <p>Password</p>
+                            </a>
+                        </div>
+                        <i class="modal__icon-close fa-solid fa-xmark"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="modal__sign hide">
+            <div class="modal__inner">
+                <form action="" class="form">
+                    <h1>SIGN UP</h1>
+                    <h2>Email</h2>
+                    <input type="email" placeholder="Enter email" required>
+                    <h2>Password</h2>
+                    <input type="text" placeholder="Enter password" required>
+                    <h2>Repeat Password</h2>
+                    <input type="text" placeholder="Repeat password" required>
+                    <label>
+                        <input type="checkbox" checked="checked" name="checked">Remember me
+                    </label>
+                    <div class="modal__sign-footer">
+                        <a href="">Cancel</a>
+                        <button type="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- modal ........................................-->
+        <div class="header__category">
+            <ul class="header__category-list">
+                <li class="header__category-item">
+                    <a href="">TRANG CHỦ</a>
+                </li>
+                <li class="header__category-item">
+                    <a href="">GIỚI THIỆU</a>
+                </li>
+                <li class="header__category-item">
+                    <a href="">ÁO DÀI CÁCH TÂN</a>      
+                    <ul class="subnav">
+                        <li class="subnav__item">
+                            <a href="">ÁO DÀI CỜ ĐỎ SAO VÀNG</a>
+                        </li>
+                        <li class="subnav__item">
+                            <a href="">ÁO DÀI LONG PHƯỢNG</a>
+                        </li>
+                    </ul>            
+                </li>
+                <li class="header__category-item">
+                    <a href="">ÁO DÀI HỌC SINH</a>                  
+                </li>
+                <li class="header__category-item">
+                    <a href="">ÁO BÀ BA</a>
+                    <ul class="subnav">
+                        <li class="subnav__item">
+                            <a href="">ÁO BÀ BA HOA SEN</a>
+                        </li>
+                        <li class="subnav__item">
+                            <a href="">ÁO BÀ BA IN HOA</a>
+                        </li>
+                        <li class="subnav__item">
+                            <a href="">ÁO BÀ BA TRƠN</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__category-item">
+                    <a href="">ÁO DÀI</a>
+                    <ul class="subnav">
+                        <li class="subnav__item">
+                            <a href="">ÁO DÀI ĐÔI</a>
+                        </li>
+                        <li class="subnav__item">
+                            <a href="">ÁO DÀI NAM</a>
+                        </li>
+                        <li class="subnav__item">
+                            <a href="">ÁO DÀI NỮ</a>
+                        </li>
+                        <li class="subnav__item">
+                            <a href="">ÁO DÀI TẾT</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+<!-- content -->
+    <div class="content">
+        <div class="pay">
+            <div class="pay__detail">
+                <h2>THÔNG TIN THANH TOÁN</h2>
+                <h3>Họ và tên</h3>
+                <input type="text" placeholder="Nhập đầy đủ họ tên">
+                <h3>Số điện thoại</h3>
+                <input type="text" >
+                <h3>Địa chỉ email</h3>
+                <input type="email">
+                <h3>Tỉnh/Thành phố</h3>
+                <input type="text" placeholder="Thành phố">
+                <h3>Quận/Huyện</h3>
+                <input type="text" placeholder="Quận/Huyện">
+                <h3>Xã/Phường</h3>
+                <input type="text" placeholder="Xã/Phường">
+                <h3>Địa chỉ</h3>
+                <input type="text" placeholder="Ví dụ: Số 20, ngõ 08">
+                <h3>Thông tin bổ sung</h3>
+                <h4>Ghi chú đơn hàng(tùy chọn)</h4>
+                <input class="pay__detail-input" type="text" placeholder="Ghi chú về đơn hàng hay địa chỉ giao hàng chi tiết hơn">
+            </div>
+            <div class="pay__order">
+                 <h2>ĐƠN HÀNG CỦA BẠN</h2>
+                 <div class="pay__order-datail">
+                     <h3>Sản phẩm</h3>
+                     <h3>Tạm tính</h3>
+                 </div>
+                 <div class="pay__order-price">
+                     <h4>Mãu website áo dài nghệ thuật</h4>
+                     <h5>x</h5>
+                     <h6>1</h6>
+                     <h6>390 000đ</h6>
+                 </div>
+                 <div class="pay__order-total">
+                     <h3>Tổng</h3>
+                     <h6>390 000đ</h6>
+                 </div>
+                 <div class="pay__order-pay">
+                     <input type="radio">
+                     <h3>Thanh toán qua VNPAY</h3>
+                 </div>
+                 <button class="pay__order-button">
+                     <a href="">Thanh toán trực tiếp qua VNPAY</a>
+                 </button>
+                 <div class="pay__order-bank">
+                     <input type="radio">
+                     <h3>Chuyển khoản ngân hàng</h3>
+                 </div>
+                 <div class="pay__order-cod">
+                     <input type="radio">
+                     <h3>Thanh toán trực tiếp</h3>
+                 </div>
+                 <h5>Dữ liệu cá nhân của bạn sẽ được sử dụng để xử lí đơn đặt hàng, 
+                     hỗ trợ trải nghiêm của bạn trên toàn bộ trang web này và cho các mục đích khác được mô tả trong chính sách riêng tư</h5>
+                 <div class="pay__order-check">
+                     <input type="checkbox" checked="checked">
+                     <h3> Tôi đã đọc và đồng ý</h3>
+                 </div>
+                 <button class="pay__pay">
+                     <a href="">ĐẶT HÀNG</a>
+                 </button>
+            </div>
+        </div>
+    </div>
+<!-- content -->
+        <div class="product__footer">
+            <div class="grid wide">
+                <div class="row ">
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product__footer-list">
+                            <h2 class="product__footer-name">GIỚI THIỆU</h2>
+                            <P class="product__footer-des">Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh.</P>
+                        </div>                  
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product__footer-list">
+                            <h2 class="product__footer-name">ĐỊA CHỈ</h2>
+                            <div class="product__footer-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p class="product__footer-des">319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Huế</p>
+                            </div>
+                            <div class="product__footer-item">
+                                <i class="fa-solid fa-phone"></i>                   
+                                <p class="product__footer-des">0949291126</p>
+                            </div>
+                            <div class="product__footer-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p class="product__footer-des">demonhunterg@gmail.com</p>
+                            </div>
+                            <div class="product__footer-item">
+                                <i class="fa-brands fa-skype"></i>
+                                <p class="product__footer-des">demonhunterg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product__footer-list">
+                            <h2 class="product__footer-name">MENU</h2>
+                            <div class="product__footer-item">
+                                <a href="">Trang chủ</a>
+                                <a href="">Giới thiệu</a>
+                            </div>
+                            <div class="product__footer-item">
+                                <a href="">Cửa hàng</a>
+                                <a href="">Tin tức</a>
+                            </div>
+                            <a href="Liên hệ"></a>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product__footer-list">
+                            <h2 class="product__footer-name">MẠNG XÃ HỘI</h2>
+                            <div class="product__footer-icon">
+                                <a href="">
+                                    <i class="product__footer-icon-face fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="">
+                                    <i class="product__footer-icon-insta fa-brands fa-instagram-square"></i>
+                                </a>
+                                <a href="">
+                                    <i class="product__footer-icon-twiter fa-brands fa-twitter-square"></i>
+                                </a>
+                                <a href="">
+                                    <i class="product__footer-icon-printer fa-brands fa-pinterest"></i>
+                                </a>
+                                <a href="">
+                                    <i class="product__footer-icon-rss fa-solid fa-square-rss"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__footer-end hide">
+                    <p>ĐĂNG KÍ NHẬN THÔNG TIN</p>
+                    <div class="producut__email">
+                        <input type="text" placeholder="Email">
+                        <button>Đăng kí</button>
+                    </div>
+                    <img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment1.png" alt="">
+                    <img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment2.png" alt="">
+                    <img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment3.png" alt="">
+                    <img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment4.png" alt="">
+                    <img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment5.png" alt="">
+                </div>
+    
+            </div>
+        </div>
+</body>

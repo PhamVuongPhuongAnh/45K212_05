@@ -63,6 +63,26 @@ document.addEventListener('keydown', function(e){
     }
 })
 
+// .......................slide.............................
+// const slideChang = document.querySelector('.content__image-slide img')
+
+index = 1
+
+
+ slideChang = function(){
+    var imgs = [
+        "./assets/img/Banner2.png",
+        "./assets/img/Banner1.png"
+    ]
+    document.querySelector('.content__image-img').src = imgs[index]
+    index++;
+    if(index == 2) {
+        index = 0;
+    }
+    setTimeout(slideChang,3000)
+}
+
+
 //.......................form__cart.......................................
 const openProduct = document.querySelector('.header__navbar-cart')
 const cartClose = document.querySelector('.cart__icon-close')
