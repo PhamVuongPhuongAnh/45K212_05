@@ -67,8 +67,6 @@ document.addEventListener('keydown', function(e){
 // const slideChang = document.querySelector('.content__image-slide img')
 
 index = 1
-
-
  slideChang = function(){
     var imgs = [
         "./assets/img/Banner2.png",
@@ -104,7 +102,7 @@ btnProduct.forEach((item, index)=> {
     item.addEventListener('click', function(e){
         var btnItem = e.target
         var product = btnItem.parentElement
-        console.log(product)
+        // console.log(product)
         var productImg = product.querySelector('.product__price-list img').src
         var productName = product.querySelector('.product__price-list h3').innerText
         var productPrice = product.querySelector('.price span').innerText
@@ -126,24 +124,24 @@ function cartAdd(productImg, productName, productPrice) {
     cartDelete()
 }
 //..................... Tính tổng.......................
-// function cartTotal(){
-//     var cartItem = document.querySelectorAll('tbody tr')
+function cartTotal(){
+    var cartItem = document.querySelectorAll('tbody tr')
 
-//     var totalB = 0
-//     for(var i=0; i < cartItem.length; i++){
-//         var productPrice = cartItem[i].querySelector('.prices')
-//         // console.log(productPrice)
-//         var inputValue = cartItem[i].querySelector('tbody input').value
-//         // console.log(inputValue)
-//         var totalA = productPrice*inputValue
-//         totalB = totalB + totalA
-//         // console.log(totalA)
+    var totalB = 0
+    for(var i=0; i < cartItem.length; i++){
+        var productPrice = cartItem[i].querySelector('.price span').innerText
+        console.log(productPrice)
+        var inputValue = cartItem[i].querySelector('tbody input').value
+        console.log(inputValue)
+        var totalA = productPrice*inputValue
+        totalB = totalB + totalA
+        // console.log(totalA)
 
-//     }
-//     var totalC = document.querySelector('.product__cart-price-total span')
-//     totalC.innerHTML = totalB
-//     // totalC = totalB + totalA
-// }
+    }
+    var totalC = document.querySelector('.product__cart-price-total span')
+    totalC.innerHTML = totalB
+    totalC = totalB + totalA
+}
 
 // cartDelete.................................
 function cartDelete(){
@@ -156,3 +154,13 @@ function cartDelete(){
         })
     }
 }
+
+
+
+//show
+const progress = document.querySelector('.progress-done');
+
+setTimeout(() => {
+  progress.style.opacity = 1;
+  progress.style.width = progress.getAttribute('data-done') + '%';
+}, 2000)
