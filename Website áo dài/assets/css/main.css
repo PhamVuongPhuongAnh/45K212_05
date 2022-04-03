@@ -446,6 +446,28 @@ form > input {
 .content__form-board table tbody td a{
    text-decoration: none;
 }
+
+.content__continute {
+    margin: 20px;
+}
+.content__continute button {
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: #333;
+    border: 1px solid #888;
+    outline: none;
+    padding: 15px;
+    cursor: pointer;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.content__continute button a {
+    text-decoration: none;
+}
+.content__continute button:hover {
+    background-color: black;
+    color: var(--white-color);
+}
 .hide {
     display: none;
 }
@@ -505,7 +527,11 @@ form > input {
     opacity: 0.7;
     z-index: 10;
 }
-
+.product__price-list img {
+    height: 432px;
+    object-fit: fill;
+    margin: 0 10px;
+}
 .product__price-list h4 {
     position: absolute;
     top: 10px;
@@ -1123,21 +1149,31 @@ form > input {
     background-color: var(--white-color);
 }
 .pay__detail {
-    margin-right: 230px;
-    border-right: 1px solid #888;
-    padding-right: 150px;
+    
+    padding-right: 115px;
 }
 .pay__detail h2 {
-
+    font-size: 1.2rem;
+    color: var(--red-color);
+    padding-bottom: 5px;
 }
 .pay__detail h3 {
-
+    font-size: 1rem;
+    color: black;
+    margin-top: 5px;
 }
-.pay__detail input {
-
+.pay__detail > input {
+    height: 35px;
+    outline: none;
+    width: 379px;
+    margin: 6px 0px;
+}
+.pay__detail-input {
+    height: 80px;
 }
 .pay__detail h4 {
-
+    opacity: 0.8;
+    font-size: 1rem;
 }
 .pay__order {
     border: 1px solid #2478ba;
@@ -1145,83 +1181,156 @@ form > input {
     border-radius: 5px;
 }
 .pay__order h2 {
-
+    font-size: 1.4rem;
+    color: var(--red-color);
 }
 .pay__order-datail {
-
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 1px solid #888;
+    padding: 8px;
 }
 .pay__order-datail > h3 {
-
+    font-size: 1.1rem;
 }
 .pay__order-price {
-
+    display: flex;
+    padding: 10px 0px;
 }
 .pay__order-price > h4 {
-
+    font-size: 0.7rem;
+    margin-right: 215px;
 }
 .pay__order-price > h5 {
-
+    font-size: 0.6rem;
+    color: black;
+    margin-right: 3px;
 }
 .pay__order-price > h6 {
-
+    color: var(--red-color);
+    font-size: 0.8rem;
+    margin: 0 0 0 37px;
 }
 .pay__order-total {
-
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
 }
 .pay__order-total h3 {
-
+    font-size: 0.9rem;
+    color: black;
 }
 .pay__order-total h6 {
-
+    color: var(--red-color);
+    font-size: 0.8rem;
+    margin-left: 4px;
 }
 .pay__order-pay {
-
+    display: flex;
+    
 }
 .pay__order-pay input {
-
+    margin-right: 15px;
 }
 .pay__order-pay h3 {
-
+    font-size: 1rem;
+    color: black;
 }
 .pay__order-button {
-
+    border: none;
+    outline: none;
+    height: 35px;
+    padding: 10px;
+    background-color: #3b6994;
+    border-radius: 5px;
+    margin: 8px 12px;
+    width: 100%;
 }
 .pay__order-button a {
-
+    text-decoration: none;
+    color: var(--white-color);
 }
 .pay__order-bank {
-
+    display: flex;
+    margin: 10px 0px;
 }
 .pay__order-bank input {
-
+    margin-right: 15px;
 }
 .pay__order-bank h3 {
-
+    font-size: 1rem;
 }
 .pay__order-cod {
-
+    display: flex;
+    margin: 10px 0px;
 }
 .pay__order-cod input {
-
+    margin-right: 15px;
 }
 .pay__order-cod h3 {
-
+    font-size: 1rem;
 }
-.pay__order h5 {
-
+.pay__order > h5 {
+    margin: 40px 0px;
+    font-size: 0.8rem;
+    opacity: 0.8;
 }
 .pay__order-check {
-
+    display: flex;
 }
 .pay__order-check input {
-
+    margin-right: 15px;
 }
 .pay__order-check h3 {
-
+    font-size: 0.8rem;
 }
 .pay__pay {
-
+    border: none;
+    outline: none;
+    background-color: var(--red-color);
+    border-radius: 5px;
+    height: 40px;
+    width: 170px;
+    text-align: center;
+    margin: 25px 160px;
 }
 .pay__pay a {
+text-decoration: none;
+    padding: 10px;
+    color: var(--white-color);
+    text-align: center;
+    font-weight: bold;
+}
+/*.......... Quan li thong tin tai khoan ...........*/
+.infomation {
+    background-color: #F5F5F5;
+    max-width: 350px;
+}
+.infomation h1 {
+    padding: 30px 0 10px 10px;
+    font-size: 1.2rem;
+}
+.infomation h3 {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    opacity: 0.8;
+    padding-left: 10px;
+}
+.info__detail {
+    display: flex;
+    border: 1px solid #04aa6d;
 
+}
+.info__detail i {
+    font-size: 1rem;
+    color: #333;
+    padding: 8px;
+    border-right: 1px solid #04aa6d;
+}
+.info__detail a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
 }
