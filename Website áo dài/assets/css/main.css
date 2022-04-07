@@ -98,6 +98,13 @@ body {
 .header__navbar-button-icon {
 
 }
+.header__navbar-list {
+    background-color: var(--white-color);
+    z-index: 12;
+}
+.header__navbar-item a {
+    color: #333;
+}
 .header__navbar-cart {
     margin-left: 129px;
     color: var(--white-color);
@@ -494,6 +501,42 @@ form > input {
     font-size: 2rem;
     font-weight: 900;
     color: #888;
+    cursor: pointer;
+}
+.contact {
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    z-index: 10;
+}
+.contact > button {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: var(--white-color);
+    background-color: #2478ba;
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+.contact__input {
+    display: flex;
+    margin: 0 10px;
+}
+
+.contact__input i {
+    font-size: 1.2rem;
+    color: #2478ba;
+    margin-top: 7px;
+    margin-right: 27px;
+    
+}
+.contact__input > h3 {
+    font-size: 1.2rem;
+    color: #2478ba;
+    margin-top: 9px;
+    margin-right: 5px;
     cursor: pointer;
 }
 .product__price {
@@ -902,14 +945,15 @@ form > input {
 }
 .product__category-name span {
     color: var(--red-color);
-    padding: 25px 30px 25px 30px;
+    padding: 25px 65px 25px 88px;
     display: block;
 }
 .product__category-name h3 {
     color: yellowgreen;
     font-size: 1.2rem;
-    padding-right: 10px
-
+    padding-right: 10px;
+    padding-left: 84px;
+    
 } 
 .product__hightlight {
     margin-top: 60px;
@@ -1024,6 +1068,7 @@ form > input {
 .product__hightlight-icon i{
     padding: 5px 7px;
     cursor: pointer;
+    color: #888;
 }
 
 
@@ -1063,7 +1108,7 @@ form > input {
 .product__footer-item a {
     text-decoration: none;
     padding: 15px 15px 10px 0;
-    color: #000;
+    color: #fff;
 }
 /* .product__footer-item:hover > a {
     color: var(--white-color);
@@ -1141,12 +1186,34 @@ form > input {
 /* ...........ĐẶT HÀNG VÀ THANH TOÁN........... */
 .content {
     background-color: #efe4d3;
+    
+}
+.content__info {
+    display: flex;
+    background-color: var(--white-color);
+    padding: 15px 15px;
+}
+.content__info > h1 {
+    font-size: 1.3rem;
+    color: black;
+    cursor: pointer;
+}
+.content__info > h2 {
+    margin: 0 5px;
+    font-size: 1rem;
+    padding: 3px;
 }
 .pay {
     display: flex;
     padding: 50px 240px;
     border: 1px solid #333;
     background-color: var(--white-color);
+}
+.pay > h1 {
+    
+}
+.pay > h2 {
+
 }
 .pay__detail {
     
@@ -1167,6 +1234,7 @@ form > input {
     outline: none;
     width: 379px;
     margin: 6px 0px;
+    padding-left: 5px;
 }
 .pay__detail-input {
     height: 80px;
@@ -1305,8 +1373,11 @@ text-decoration: none;
 /*.......... Quan li thong tin tai khoan ...........*/
 .infomation {
     background-color: #F5F5F5;
-    max-width: 350px;
+    
+    display: flex;
+    justify-content: space-around;
 }
+
 .infomation h1 {
     padding: 30px 0 10px 10px;
     font-size: 1.2rem;
@@ -1333,4 +1404,20 @@ text-decoration: none;
     font-size: 1rem;
     padding: 10px;
     cursor: pointer;
+}
+.infomation__address {
+
+}
+.infomation__address > h1 {
+    font-size: 1.2rem;
+}
+.infomation__address > h2 {
+    font-size: 1rem;
+    padding-left: 11px;
+}
+.infomation__name {
+    display: flex;
+}
+.infomation__name > h3 {
+
 }
