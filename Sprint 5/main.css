@@ -1,0 +1,36 @@
+.contact {
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    z-index: 10;
+}
+.contact > button {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: var(--white-color);
+    background-color: #2478ba;
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+.contact__input {
+    display: flex;
+    margin: 0 10px;
+}
+ 
+.contact__input i {
+    font-size: 1.2rem;
+    color: #2478ba;
+    margin-top: 7px;
+    margin-right: 27px;
+    
+}
+.contact__input > h3 {
+    font-size: 1.2rem;
+    color: #2478ba;
+    margin-top: 9px;
+    margin-right: 5px;
+    cursor: pointer;
+}
