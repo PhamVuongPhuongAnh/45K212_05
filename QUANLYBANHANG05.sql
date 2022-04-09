@@ -1,7 +1,7 @@
 ﻿/* Tạo Cơ Sở Dữ Liệu */
-CREATE DATABASE QuanLy_BanHang
+CREATE DATABASE QuanLy_BanHang05
 GO 
-USE QuanLy_BanHang
+USE QuanLy_BanHang05
 GO
 CREATE TABLE tbl_KhoHang
 (
@@ -108,7 +108,7 @@ group by tbl_KhoHang.TenH
 
 
 /* cập nhật hàng trong kho sau khi đặt hàng hoặc cập nhật */
-USE QuanLyBanHang20
+USE QuanLy_BanHang05
 GO
 CREATE TRIGGER trg_Dat_Hang ON tbl_DatHang AFTER INSERT AS 
 BEGIN
