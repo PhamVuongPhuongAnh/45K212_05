@@ -164,3 +164,15 @@ setTimeout(() => {
   progress.style.opacity = 1;
   progress.style.width = progress.getAttribute('data-done') + '%';
 }, 2000)
+
+
+
+
+
+// ...............Quanlithongtintaikhoan.................
+const order = document.querySelector('.info__detail')
+const address = document.querySelector('.infomation__address')
+
+order.addEventListener('click', function(){
+    
+})
